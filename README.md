@@ -1,15 +1,14 @@
 <h1 align="center">初识rabbitMQ</h1>
 
 ## 一,RabbitMQ概述
-
-   - RabbitMQ是一个由Erlang开发的AMQP（AdvancedMessage Queue ）的开源实现，支持多种客户端，如：Python、Ruby、.NET、Java、JMS、C、PHP、ActionScript、XMPP、STOMP等，支持AJAX。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗
-   - AMQP，即Advanced Message Queuing Protocol,一个提供统一消息服务的应用层标准高级消息队列协议,是应用层协议的一个开放标准,为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息，并不受客户端/中间件不同产品，不同的开发语言等条件的限制。Erlang中的实现有 RabbitMQ等
-   - RabbitMQ的结构图如下：
+- RabbitMQ是一个由Erlang开发的AMQP（AdvancedMessage Queue ）的开源实现，支持多种客户端，如：Python、Ruby、.NET、Java、JMS、C、PHP、ActionScript、XMPP、STOMP等，支持AJAX。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗
+- AMQP，即Advanced Message Queuing Protocol,一个提供统一消息服务的应用层标准高级消息队列协议,是应用层协议的一个开放标准,为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息，并不受客户端/中间件不同产品，不同的开发语言等条件的限制。Erlang中的实现有 RabbitMQ等
+- RabbitMQ的结构图如下：
    ![](https://i.imgur.com/0ZrhTsf.png)
-   - 几个概念说明：
+- 几个概念说明：
    		
-	* Broker：简单来说就是消息队列服务器实体。
-	* Exchange：消息交换机，它指定消息按什么规则，路由到哪个队列。
+ 	- Broker：简单来说就是消息队列服务器实体。
+ 	- Exchange：消息交换机，它指定消息按什么规则，路由到哪个队列。
 	- Queue：消息队列载体，每个消息都会被投入到一个或多个队列。
 	- Binding：绑定，它的作用就是把exchange和queue按照路由规则绑定起来。
 	- Routing Key：路由关键字，exchange根据这个关键字进行消息投递。
@@ -17,10 +16,9 @@
 	- producer：消息生产者，就是投递消息的程序。
 	- consumer：消息消费者，就是接受消息的程序。
 	-channel：消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务。
-
-   - 消息队列的使用过程大概如下：
+- 消息队列的使用过程大概如下：
    		
--（1）客户端连接到消息队列服务器，打开一个channel。
+	-（1）客户端连接到消息队列服务器，打开一个channel。
 	-（2）客户端声明一个exchange，并设置相关属性。
 	-（3）客户端声明一个queue，并设置相关属性。
 	-（4）客户端使用routing key，在exchange和queue之间建立好绑定关系。
