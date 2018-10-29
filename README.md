@@ -5,8 +5,7 @@
    - RabbitMQ是一个由Erlang开发的AMQP（AdvancedMessage Queue ）的开源实现，支持多种客户端，如：Python、Ruby、.NET、Java、JMS、C、PHP、ActionScript、XMPP、STOMP等，支持AJAX。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗
    - AMQP，即Advanced Message Queuing Protocol,一个提供统一消息服务的应用层标准高级消息队列协议,是应用层协议的一个开放标准,为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息，并不受客户端/中间件不同产品，不同的开发语言等条件的限制。Erlang中的实现有 RabbitMQ等
    - RabbitMQ的结构图如下：
-   
-    ![](https://i.imgur.com/0ZrhTsf.png)
+   ![](https://i.imgur.com/0ZrhTsf.png)
    - 几个概念说明：
    		
 	- Broker：简单来说就是消息队列服务器实体。
