@@ -6,7 +6,7 @@
    - AMQP，即Advanced Message Queuing Protocol,一个提供统一消息服务的应用层标准高级消息队列协议,是应用层协议的一个开放标准,为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息，并不受客户端/中间件不同产品，不同的开发语言等条件的限制。Erlang中的实现有 RabbitMQ等
    - RabbitMQ的结构图如下：
    
-    ![结构流程图](https://i.imgur.com/0ZrhTsf.png)
+    ![](https://i.imgur.com/0ZrhTsf.png)
    - 几个概念说明：
    		
 	- Broker：简单来说就是消息队列服务器实体。
@@ -21,13 +21,13 @@
 
    - 消息队列的使用过程大概如下：
    		
-		（1）客户端连接到消息队列服务器，打开一个channel。
-		（2）客户端声明一个exchange，并设置相关属性。
-		（3）客户端声明一个queue，并设置相关属性。
-		（4）客户端使用routing key，在exchange和queue之间建立好绑定关系。
-		（5）客户端投递消息到exchange。
-			exchange接收到消息后，就根据消息的key和已经设置的binding，进行消息路由，将消息投递到一个或多个队列里。
-			exchange也有几个类型，完全根据key进行投递的叫做Direct交换机，例如，绑定时设置了routing key为”abc”，那么客户端提交的消息，只有设置了key为”abc”的才会投递到队列。对key进行模式匹配后进行投递的叫做Topic交换机，符号”#”匹配一个或多个词，符号”*”匹配正好一个词。例如”abc.#”匹配”abc.def.ghi”，”abc.*”只匹配”abc.def”。还有一种不需要key的，叫做Fanout交换机，它采取广播模式，一个消息进来时，投递到与该交换机绑定的所有队列。
+	-（1）客户端连接到消息队列服务器，打开一个channel。
+	-（2）客户端声明一个exchange，并设置相关属性。
+	-（3）客户端声明一个queue，并设置相关属性。
+	-（4）客户端使用routing key，在exchange和queue之间建立好绑定关系。
+	-（5）客户端投递消息到exchange。
+		exchange接收到消息后，就根据消息的key和已经设置的binding，进行消息路由，将消息投递到一个或多个队列里。
+		exchange也有几个类型，完全根据key进行投递的叫做Direct交换机，例如，绑定时设置了routing key为”abc”，那么客户端提交的消息，只有设置了key为”abc”的才会投递到队列。对key进行模式匹配后进行投递的叫做Topic交换机，符号”#”匹配一个或多个词，符号”*”匹配正好一个词。例如”abc.#”匹配”abc.def.ghi”，”abc.*”只匹配”abc.def”。还有一种不需要key的，叫做Fanout交换机，它采取广播模式，一个消息进来时，投递到与该交换机绑定的所有队列。
 			RabbitMQ支持消息的持久化，也就是数据写在磁盘上，为了数据安全考虑，我想大多数用户都会选择持久化。消息队列持久化包括3个部分：
 		　　	（1）exchange持久化，在声明时指定durable => 1
 		　　	（2）queue持久化，在声明时指定durable => 1
