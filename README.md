@@ -17,7 +17,7 @@
 	- vhost：虚拟主机，一个broker里可以开设多个vhost，用作不同用户的权限分离。
 	- producer：消息生产者，就是投递消息的程序。
 	- consumer：消息消费者，就是接受消息的程序。
-	-channel：消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务。
+	- channel：消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务。
 - 消息队列的使用过程大概如下：
 	
 	- 客户端连接到消息队列服务器，打开一个channel。
