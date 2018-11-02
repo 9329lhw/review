@@ -1,4 +1,4 @@
-<h1 align="center">初识rabbitMQ</h1>
+<h1 align="center">简单初识rabbitMQ</h1>
 
 ## 一,RabbitMQ概述
 - RabbitMQ是一个由Erlang开发的AMQP（AdvancedMessage Queue ）的开源实现，支持多种客户端，如：Python、Ruby、.NET、Java、JMS、C、PHP、ActionScript、XMPP、STOMP等，支持AJAX。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗
