@@ -4,7 +4,8 @@
 - [《PHPer、Gopher成长之路》V1.10](https://github.com/TIGERB/easy-tips)
 - [code-segment](https://github.com/2lovecode/code-segment)
 - [《PHPer、Gopher成长之路》V1.10](https://github.com/TIGERB/easy-tips)
-
+- [Golang - 100天从新手到大师](https://github.com/rubyhan1314/Golang-100-Days)
+- [Golang多语言版本](https://github.com/astaxie/build-web-application-with-golang)
 
    
 ## 二, Docker
