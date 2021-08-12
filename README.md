@@ -1,6 +1,8 @@
 <h1 align="center">技术栈整理</h1>
 
 ## 一,PHP+GO
+- [PHP扩展开发及内核应用](https://github.com/zhouyl/phpbook/blob/master/index.md)
+- [lnmput](https://github.com/lnmput/lnmput.github.com)
 - [《PHPer、Gopher成长之路》V1.10](https://github.com/TIGERB/easy-tips)
 - [code-segment](https://github.com/2lovecode/code-segment)
 - [《PHPer、Gopher成长之路》V1.10](https://github.com/TIGERB/easy-tips)
@@ -14,9 +16,9 @@
 ## 三，框架文档
 - [ThinkPHP5.0完全开发手册](https://www.kancloud.cn/manual/thinkphp5)
 
-## 三，框架文档
-
-## 三, 常用工具
+## 四，博客
+ - https://github.com/zhouyl/best-php
+## 五, 常用工具
  - 代码版本管理：
     - gogs
     - gitlib  
@@ -29,16 +31,6 @@
     - https://www.v1tx.com/post/best-website-speed-test-tools/
  - 网站流量分析
     - Google Analytics(GA) 
- - 网站追踪：
-    - idev
-    - ShareAsale
-    - A8
-    - Awin
-    - TradeTracker
-    - ADCELL
-    - Offerforge
-    - Outbrain
-     
  - 企业文档：
    - 接口文档管理平台：[yapi](https://github.com/YMFE/yapi)
    - 企业知识库：confluence
@@ -49,6 +41,18 @@
  - 临时邮箱：
     - https://temp-mail.org/zh
     - http://24mail.chacuo.net/     
+    
+ - 电商网站：
+    - 测试信用卡：https://www.simplify.com/commerce/docs/testing/test-card-numbers
+    - 推广平台：
+        - idev
+        - ShareAsale
+        - A8
+        - Awin
+        - TradeTracker
+        - ADCELL
+        - Offerforge
+        - Outbrain
         
 
 
