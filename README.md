@@ -11,9 +11,45 @@
 ## 二, Docker
 - [docker-lnmp](https://github.com/wxxiong6/docker-lnmp)
 
+## 三，框架文档
+- [ThinkPHP5.0完全开发手册](https://www.kancloud.cn/manual/thinkphp5)
+
+## 三，框架文档
 
 ## 三, 常用工具
+ - 代码版本管理：
+    - gogs
+    - gitlib  
  - [流量统计](http://www.alexa.cn/traffic/olightstore.com)
+ - 网站测速：
+    - https://performance.sucuri.net
+    - https://gtmetrix.com
+    - https://developers.google.com/speed/pagespeed/insights/
+    - https://www.giftofspeed.com/
+    - https://www.v1tx.com/post/best-website-speed-test-tools/
+ - 网站流量分析
+    - Google Analytics(GA) 
+ - 网站追踪：
+    - idev
+    - ShareAsale
+    - A8
+    - Awin
+    - TradeTracker
+    - ADCELL
+    - Offerforge
+    - Outbrain
+     
+ - 企业文档：
+   - 接口文档管理平台：[yapi](https://github.com/YMFE/yapi)
+   - 企业知识库：confluence
+   - 个人技术博客：
+        - [MinDoc](https://github.com/mindoc-org/mindoc)
+        - [MrDoc](http://mrdoc.zmister.com/project-7/doc-1290/)
+        - 优米云盘
+ - 临时邮箱：
+    - https://temp-mail.org/zh
+    - http://24mail.chacuo.net/     
+        
 
 
 
